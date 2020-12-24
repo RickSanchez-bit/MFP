@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/*================================================================*/
+
+/*====================Обнуляющий стиль============================*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	font-weight: 400;
+	font-style: normal;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+ul, li, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a, a:visited, a:hover {
+	text-decoration: none;
+	display: inline-block;
+}
+button:active, input:active, button:focus {
+	outline: none;
+}
+/*================================================================*/
+
+/*================================================================*/
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+
+header {
+	flex: 0 0 auto;
+}
+main {
+		flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+/*================================================================*/
+/*================================================================*/
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+}
+main {
+	height: 100%;
+	margin-top: 131px;
+}
+footer {}
+
+
+
+
+
+/*===========================header===============================*/
+.header {
+	box-shadow: 0px 0px 16px 0px rgba(38, 38, 38, 0.16);
+	background: rgba(255, 255, 255, 1);
+}
+.header__row {
+	height: 72px;
+}
+.sign {
+	border: 1px solid rgba(224, 224, 224, 1);
+	border-radius: 2px;
+	padding: 13px 19px;
+	color: rgba(29, 29, 29, 1);
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 12px;
+	letter-spacing: .0159em;
+}
+.basket {
+	padding: 0 10px;
+}
+/*===========================/header==============================*/
+
+
+
+
+
+/*===========================main=================================*/
+.main {}
+
+/*===========================================================*/
+
+.search {
+	width: 100%;
+	border-bottom: 1px solid rgba(117,117,117,.3);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+}
+.placeholder {
+	color: rgba(98,98,98,.5);
+	color: red;
+}
+	input {outline:none;}
+
+	::-webkit-input-placeholder {color:rgba(98,98,98,.5); opacity:1;}/* webkit */
+	::-moz-placeholder          {color:rgba(98,98,98,.5); opacity:1;}/* Firefox 19+ */
+	:-moz-placeholder           {color:rgba(98,98,98,.5); opacity:1;}/* Firefox 18- */
+	:-ms-input-placeholder      {color:rgba(98,98,98,.5); opacity:1;}/* IE */
+	:focus::-webkit-input-placeholder {opacity:0;}/* webkit */
+	:focus::-moz-placeholder          {opacity:0;}/* Firefox 19+ */
+	:focus:-moz-placeholder           {opacity:0;}/* Firefox 18- */
+	:focus:-ms-input-placeholder      {opacity:0;}/* IE */
+
+	input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+	input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+	input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+	input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+	input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+	input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+	input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+	input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+/*===========================================================*/
+
+/*===========================================================*/
+h1{
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 34px;
+	text-align: left;
+	color: #1d1d1d;
+	margin-top: 56px;
+}
+/*===========================================================*/
+
+
+/*================*//*================*//*================*/
+.card {
+	background: rgba(117, 117, 117, .4);
+	background: #fff;
+	max-width: 368px;
+	margin-top: 16px;
+}
+.card a {
+	display: block;
+}
+.card img {
+	width: 100%;
+	height: 100%;
+
+	object-fit: inherit;
+}
+
+.card:hover {
+	background: rgba(117, 117, 117, .1);
+	transition: .5s;
+}
+.card:not(:hover) {
+	background: #fff;
+	transition: .7s;
+}
+.card:active {
+	background: rgba(117, 117, 117, 0.04);
+}
+.card__rest {
+	color: rgba(29, 29, 29, 1);
+	font-size: 16px;
+	line-height: 24px;
+}
+.card__eat {
+color: rgba(98, 98, 98, 1);
+font-size: 14px;
+line-height: 21px;
+margin: 4px 0;
+}
+.card__time {
+color: rgba(29, 29, 29, 1);
+font-size: 13px;
+line-height: 21px;
+padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.card a, img {
+		/*max-width: 308px;*/
+		/*min-width: 308px;*/
+		max-height: 246px;
+		/*min-height: 246px;*/
+	}
+	.cards {
+		margin-bottom: 48px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.card a, img {
+		max-width: 368px;
+		/*min-width: 368px;*/
+		max-height: 256px;
+		/*min-height: 256px;*/
+	}
+	.cards {
+		margin-bottom: 48px;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.card a, img {
+		/*max-width: 308px;*/
+		/*min-width: 308px;*/
+		max-height: 256px;
+		/*min-height: 256px;*/
+	}
+	.cards {
+		margin-bottom: 80px;
+	}
+}
+
+/*================*//*================*//*================*/
+
+/*===========================/main================================*/
+
+
+
+/*============================footer==============================*/
+.footer {
+	background-color: rgba(38, 38, 38, 1);
+}
+.footer__logo {
+	border-bottom: 1px solid rgba(255, 255, 255, .4);
+	padding-top: 56px;
+	padding-bottom: 40px;
+}
+.download {
+	margin: 40px 0;
+}
+@media screen and (max-width: 575px) {
+	.download {
+		margin: 24px 0;
+	}
+}
+.size {
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 13px;
+	color: rgba(255, 255, 255, 1);
+}
+.footer__subtitle {
+	/*border-top: 1px solid rgba(255, 255, 255, .4);*/
+	padding: 40px 0;
+}
+@media screen and (max-width: 767px) {
+	.footer__subtitle__text {
+		margin: 24px 0;
+	}
+}
+.line {
+	border-top: 1px solid rgba(255, 255, 255, .4);
+	border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+a, button {
+	color: rgba(255, 255, 255, 1);
+	font-size: 13px;
+	font-weight: 400;
+	cursor: pointer;
+}
+.footer__info__padding {
+	padding-top: 23px;
+}
+.margin__top {
+	margin-top: 16px;
+}
+@media screen and (max-width: 767px) {
+	.margin__top:last-child {
+		margin-top: 0;
+	}
+}
+.margin__bot {}
+@media screen and (min-width: 768px) {
+	.margin__bot {
+		margin-bottom: 48px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.margin__bot {
+		margin-bottom: 40px;
+	}
+}
+.language {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 32px;
+	text-align: left;
+	border-radius: 2px;
+	padding: 12px 0 12px 48px;
+	background: rgba(59, 59, 59, 1);
+	border: none;
+}
+.language:before {
+	position: absolute;
+	top: 27%;
+	left: 1.25231em;
+	content: '';
+	width: 16px;
+	height: 16px;
+	background: url('img/icons/world.svg') no-repeat 0px 0px;
+	display: inline-block;
+}
+.language:after {
+	content: '';
+	position: absolute;
+	top: 30%;
+	right: 1em;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid rgba(255, 255, 255, 1);
+	border-right: 2px solid rgba(255, 255, 255, 1);
+	transform: rotate(135deg) skew(2.5deg, 2.5deg);
+	-webkit-transform: rotate(135deg) skew(2.5deg, 2.5deg);
+}
+.facebook, .twitter, .instagram {
+	width: 24px;
+	height: 24px;
+}
+.twitter {
+	margin-left: 15px;
+	margin-right: 8px;
+}
+.UE {
+	font-size: 16px;
+	margin-top: 32px;
+}
+.UE span {
+	color: rgba(73, 161, 68, 1);
+}
+.UE__teg {
+	padding-bottom: 20px;
+}
+
+
+.facebook:hover {
+
+}
+.twitter:hover {
+
+}
+.instagram:hover {
+
+}
+.footer .footer__info__padding a:hover, .footer__subtitle a:hover {
+	color: rgba(73, 161, 68, 1);
+	transition: .3s;
+}
+.footer .footer__info__padding a:not(:hover), .footer__subtitle a:not(:hover) {
+	color: rgba(255, 255, 255, 1);
+	transition: .5s;
+}
+/*============================/footer=============================*/
